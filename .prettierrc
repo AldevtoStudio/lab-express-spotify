@@ -1,0 +1,7 @@
+{
+  "prettier.disableLanguages": ["handlebar", "handlebars", "hbs"],
+  "[handlebars]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  }
+}
