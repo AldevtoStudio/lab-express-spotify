@@ -11,3 +11,22 @@ form {
   align-items: center;
   justify-content: center;
 }
+
+button {
+  margin-top: 0.4em;
+  padding: 0.4em;
+  border-radius: 0.25em;
+  font-size: 1em;
+  color: white;
+  background-color: #17ac4b;
+  transition: background 0.1s;
+  border: none;
+}
+
+button:hover {
+  background: #1ed760;
+}
+
+input {
+  font-size: 1.6em;
+}

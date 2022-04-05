@@ -1,0 +1,24 @@
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: white;
+}
+
+.tracks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #17ac4b;
+}
+
+hr {
+  margin: 1em 1em;
+}
+
+.track h3 {
+  max-width: 500px;
+}
+
+.track audio {
+  width: 500px;
+}

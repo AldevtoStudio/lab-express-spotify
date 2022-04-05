@@ -50,6 +50,8 @@ app.get("/", (req, res) => {
 app.get("/artist-search", (req, res) => {
   const name = req.query.name;
 
+  if (!name) res.redirect("/");
+
   spotifyApi
     .searchArtists(name)
     .then((data) => {
@@ -95,7 +97,7 @@ app.get("/tracks/:albumId", (req, res, next) => {
       console.log(data.body.items);
       res.render("tracks", {
         pageTitle: `${albumName}- Spotify`,
-        pageStyles: [{ style: "/styles/artist-search.css" }],
+        pageStyles: [{ style: "/styles/tracks.css" }],
         tracks: data.body.items,
         name: albumName,
       });
